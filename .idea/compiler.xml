@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="packtalgo" target="1.6" />
+      <module name="packtalgo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
