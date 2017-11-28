@@ -1,5 +1,6 @@
 package com.tomekl007.hashtable;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -10,7 +11,7 @@ public class CustomHashTable<K, V> {
     private final List<List<Entry<K, V>>> buckets;
 
     public CustomHashTable() {
-        this.buckets = new LinkedList<>();
+        this.buckets = new ArrayList<>();
         IntStream.range(0, NUMBER_OF_BUCKETS).forEach(i ->
                 buckets.add(i, new LinkedList<>())
         );
