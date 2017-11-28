@@ -12,7 +12,7 @@ public class LinkedListTest {
     @Test
     public void shouldAddElementToCustomList() {
         //given
-        CustomList<String> list = new CustomList<String>();
+        CustomList<String> list = new CustomList<>();
 
         //when
         list.add("a");
@@ -31,7 +31,7 @@ public class LinkedListTest {
     @Test
     public void shouldRetrieveHeadAndTailOfTheCustomList() {
         //given
-        CustomList<String> list = new CustomList<String>();
+        CustomList<String> list = new CustomList<>();
 
         //when
         list.add("a");
@@ -45,7 +45,7 @@ public class LinkedListTest {
     @Test
     public void shouldAddElementToList() {
         //given
-        List<String> list = new LinkedList<String>();
+        List<String> list = new LinkedList<>();
 
         //when
         list.add("a");
@@ -61,7 +61,7 @@ public class LinkedListTest {
     @Test
     public void shouldRetrieveHeadAndTailOfTheList() {
         //given
-        LinkedList<String> list = new LinkedList<String>();
+        LinkedList<String> list = new LinkedList<>();
 
         //when
         list.add("a");
