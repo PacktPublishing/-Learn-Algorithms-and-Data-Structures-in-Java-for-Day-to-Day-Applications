@@ -10,7 +10,7 @@ public class StackTest {
     @Test
     public void whenPushToStackThenShouldRetrieveIt() {
         //given
-        Stack<String> stack = new Stack<String>();
+        Stack<String> stack = new Stack<>();
 
         //when
         stack.push("a");
@@ -27,7 +27,7 @@ public class StackTest {
     @Test
     public void whenPushToStackThenShouldRetrieveElementsInTheProperOrder() {
         //given
-        Stack<String> stack = new Stack<String>();
+        Stack<String> stack = new Stack<>();
 
         //when
         stack.push("a");
@@ -43,7 +43,7 @@ public class StackTest {
     @Test
     public void whenPushAndPeekElementShouldNotRemoveIT() {
         //given
-        Stack<String> stack = new Stack<String>();
+        Stack<String> stack = new Stack<>();
 
         //when
         stack.push("a");
