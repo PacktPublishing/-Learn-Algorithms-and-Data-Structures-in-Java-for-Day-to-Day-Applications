@@ -1,6 +1,7 @@
 package com.tomekl007.sorting;
 
 public class BubbleSort implements Sort {
+    //O(n^2) - because outer and inner loop
     @Override
     public void sort(int[] arr) {
         int n = arr.length;

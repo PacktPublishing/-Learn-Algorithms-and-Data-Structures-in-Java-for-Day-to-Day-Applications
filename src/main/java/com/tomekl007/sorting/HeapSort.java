@@ -3,6 +3,7 @@ package com.tomekl007.sorting;
 public class HeapSort implements Sort {
     private int N;
 
+    //O(N log(N)) - iterating over every element and building BST
     @Override
     public void sort(int[] arr) {
         heapify(arr);
