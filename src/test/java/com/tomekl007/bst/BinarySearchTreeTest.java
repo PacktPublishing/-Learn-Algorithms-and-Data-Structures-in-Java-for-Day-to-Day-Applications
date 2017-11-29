@@ -33,6 +33,7 @@ public class BinarySearchTreeTest {
         );
 
         assertThat(b.find(4)).isTrue();
+        assertThat(b.find(100)).isFalse();
     }
 
 }
