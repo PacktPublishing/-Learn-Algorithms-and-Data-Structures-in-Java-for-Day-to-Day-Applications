@@ -7,6 +7,7 @@ public class HeapSort implements Sort {
     @Override
     public void sort(int[] arr) {
         heapify(arr);
+        //O(N) * log(n)
         for (int i = N; i > 0; i--) {
             swap(arr, 0, i);
             N = N - 1;
@@ -17,6 +18,7 @@ public class HeapSort implements Sort {
     /* Function to build a heap */
     public void heapify(int arr[]) {
         N = arr.length - 1;
+        //log(n)
         for (int i = N / 2; i >= 0; i--)
             maxheap(arr, i);
     }
