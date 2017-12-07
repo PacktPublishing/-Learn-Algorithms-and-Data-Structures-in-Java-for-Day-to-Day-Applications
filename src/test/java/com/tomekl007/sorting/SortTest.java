@@ -22,8 +22,8 @@ public class SortTest {
     @Test
     public void shouldSortElementsUsingHeapSort() {
         //given
-        Sort sort = new HeapSort();
         int[] input = new int[]{4, 5, 1, 2, 10, 12, 1};
+        Sort sort = new HeapSort();
 
         //when
         sort.sort(input);
