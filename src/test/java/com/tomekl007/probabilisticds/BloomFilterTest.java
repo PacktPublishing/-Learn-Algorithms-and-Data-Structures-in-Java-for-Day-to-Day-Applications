@@ -38,7 +38,7 @@ public class BloomFilterTest {
         //when
         BloomFilter<Integer> filter = BloomFilter.create(
                 Funnels.integerFunnel(),
-                5,
+                5_000_000,
                 0.01);
 
         //when
@@ -49,6 +49,6 @@ public class BloomFilterTest {
         assertThat(filter.mightContain(1)).isTrue();
         assertThat(filter.mightContain(2)).isTrue();
         assertThat(filter.mightContain(3)).isTrue();
-        assertThat(filter.mightContain(1_000_000)).isTrue();
+        assertThat(filter.mightContain(1_000_000)).isFalse();
     }
 }

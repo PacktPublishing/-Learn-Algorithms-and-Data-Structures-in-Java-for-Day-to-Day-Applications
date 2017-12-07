@@ -36,4 +36,22 @@ public class BinarySearchTreeTest {
         assertThat(b.find(100)).isFalse();
     }
 
+    @Test
+    public void testBSTDeletionSimple() {
+        //given
+        BinarySearchTree b = new BinarySearchTree();
+
+        //when
+        b.insert(3);
+        b.insert(8);
+        b.insert(1);
+
+        //then
+        b.delete(8);
+        List<Integer> results = b.getInOrder();
+        assertThat(results).containsExactly(
+                1, 3
+        );
+    }
+
 }

@@ -58,6 +58,7 @@ public class HLLLongRunningUnitTest {
         //then
         firstHll.union(secondHLL);
         long cardinality = firstHll.cardinality();
+        System.out.println(cardinality);
         assertThat(cardinality).isCloseTo(numberOfElements * 2, Offset.offset(toleratedDifference * 2));
     }
 }
