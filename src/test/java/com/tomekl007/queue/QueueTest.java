@@ -31,11 +31,14 @@ public class QueueTest {
 
         //when
         strings.offer("a");
-        String element = strings.peek();
+        strings.offer("b");
+        String element = strings.poll();
+        String element2 = strings.poll();
 
         //then
         assertThat(element).isEqualTo("a");
-        assertThat(strings.isEmpty()).isFalse();
+        assertThat(element2).isEqualTo("b");
+        assertThat(strings.isEmpty()).isTrue();
 
     }
 }
